@@ -1,0 +1,22 @@
+==============================================================================================
+Week 4
+==============================================================================================
+
+- You might notice that the week dates aren't at the top of this "weekly" recap. The main reason
+  as to why is simple: I got sick, then the holidays and work happen and this project got away
+  from me. But I'm back to tackle it! 
+
+- During that time I did stay somewhat consistent, and ended up finishing the Figma mock-up for what
+  the UI of the application will look like. You can find the link to it in the Diagram directory in the file
+  "TrainHard Mock-up UI" or within the readme.
+
+- In a personal note, I'm happy I took the time to design it, because it allowed me to place a vision
+  of the application which will help speed up the process when implementing the frontend, but also gave me
+  an understanding of how the user will interact with the system. It made me think of features and functionalities
+  that might be necessary without even realizing it. for example, I was so focused on how the database and data would
+  be handled, I never even thought about what the creation outline would look like both in UI terms or in the backend.
+
+- For now that about it, but I'll be going back to the weekly basis for this project, especially considering
+  I will begin implementation this upcoming week. I'll be starting with the backend.
+
+- If you've read through all of this, then thank you and I hope you have a great morning, afternoon, evening and night.
