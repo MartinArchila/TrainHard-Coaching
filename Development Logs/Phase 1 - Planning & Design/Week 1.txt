@@ -1,0 +1,24 @@
+==============================================================================================
+Week 1      Nov.23rd to Nov.29th
+==============================================================================================
+
+- I'm planning to write weekly logs related to the development of this project. These logs are
+  meant help me grow as a developer in multiple aspects.
+
+- One aspect is the ability to articulate my decisions regarding design, functionality, or changes
+  as a Senior Software Engineer would. I plan to go in-depth about my train of thought being most decisions.
+
+- Another aspect is to help myself develop the design mentality of developer, specifically regarding documentation,
+  reporting, etc. For example, There will be another directory in each Phase directory which will house documentation
+  for each Phase if necessary. This phase will house diagrams of the planning and design for this application. From the
+  look and feel to the relational database diagram. During the Development phase the diagrams will most likely consist
+  of use cases and such.
+
+- The last aspect is to reinforce my discipline and consistency. Knowing there's a logs for myself to complete on the Saturday
+  of that week will help me stay consistent. After all, I want to show progress right?
+
+- I also plan to try my best in implementing Agile methodologies into this project throughout its development cycle as a way
+  to showcase my capabilities in them.
+
+- if you've read all of this, thank you for spending your time here. I hope you have a great rest of your morning, afternoon, evening,
+  and night.

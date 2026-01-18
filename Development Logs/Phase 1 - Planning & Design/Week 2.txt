@@ -1,0 +1,47 @@
+==============================================================================================
+Week 2      Nov.30th to Dec.6th
+==============================================================================================
+
+- Hello! and Happy Holidays, thank you for checking this log out. This week was centered around
+ improvement and growth. I researched the tech stack I plan to build the project with, the core functionalities
+I want the application to have, and learned the C4Model for modeling software application.
+(I should preface, client in this case is the business TrainHard Coaching).
+
+- I did some researched on the technology I wanted to use for this project. My research was mainly influenced by
+  functionalities outline by the client, the scale of the client's business, the scalability of the technology
+  in case the business itself scales, and the programming paradigms that best fit what the client is looking for.
+
+- I was on the fence between micro-services and monolith as the design for the application.I love micro-services,
+  while the structure can be costly, they're greatly future-proof as they are easily scalable, and easily maintained
+  since they are separate from one another. However, I decided in monolith. I came to this decision by stepping out
+  of my shoes as a developer, and analyzing the business and what it needed rather than what I wanted to build. TrainHard
+  Coaching has a large growing customer base, but the actual users will be the small team of coaches. Its also one location (for now)
+  so for the time being its only one location, and a few devices that will actually require access to the application.
+
+- However, I believe I might have found a solution that future me can take advantage of if the business does scale in a 
+  way where microservices will work better. I chose Django for the backend technology. the first reason for this is because Headspace
+  utilizes this technology for their API's and backends (and I would love to work there someday). Second, the modularity of the
+  framework as a whole can help simplify the switch from monolith to microservices. I also liked how its structure was
+  (in a way) like a microservice structure. You build applications, which then interact with one another, and each application has
+  one responsibility, no more than that. This makes the code extremely easy to keep organized.
+
+- As for the frontend framework, I'm still on the fence. I know React, and love its approach...but I also fell in love
+  with the simplicity of Svelte. I have decided on using Tailwind CSS, but I'll work with React in mind until it comes time
+  to actually implement the frontend. 
+
+- Now, on to the diagrams. I learned the C4Model this week, which is a much more comprehensive and structured way to diagram
+  one's software application. You can learn more at C4Model.com, but essentially you break up your application into 4 layers:
+  System Context, Containers, Components, and Class (the 4 C's, get it?). System Context is the absolute most abstract way of 
+  viewing your application. Then you "zoom in and see a more descriptive, but still abstract version of your application. Finally,
+  Components are what make up your application, I think of them as the objects (like in Object-Oriented Programming). the Class layer
+  is then the classes/code that make up your Components...but even the website recommends not including it in your diagrams since it can
+  lead to confusion or redundancy.
+
+- In general, the diagramming of your application in the C4Model should mimick, if not be very similar to your rpojects structure within
+  and IDE. You have your parent directory (System Context), then the directories that divide it into frontend and backend perhaps (Containers),
+  and then your objects (Components).
+
+- I apologize for the length of this, but I guess they might get longer since these logs are meant to house my thoughts through development
+  and the decisions I've made. Anyways, you can find some of the diagrams in the subsequent directory in this Phase.
+
+- That's all for this week, and if you've read all of this, I hope you have a great morning, afternoon, evening, and night.

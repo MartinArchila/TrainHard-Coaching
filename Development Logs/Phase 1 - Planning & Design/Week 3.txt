@@ -1,0 +1,37 @@
+==============================================================================================
+Week 3      Dec.7th to Dec.13th
+==============================================================================================
+
+- This week was mainly focused around the completion of diagrams, which database to use, the 
+  structure of the database, and the beginning of designing the application.
+
+- I used the CAP Theory for decidiing what database technology to use. Partition Tolerance was a given,
+  so it was really between Availability or Consistency. I chose Consistency. My reasoning as to why is that
+  the main function of the application is to keep track of the appointments and the payments. The payments will be
+  automated as per the request for the user. As for the appointments, they must be viewed by two different users:
+  the coach assigned to that appointment, and the head coach that manages all the coaches. If either one changes
+  the apointment time, moves it to another date, the application needs to reflect that the moment its done so the other
+  is made aware of the change.
+
+- I chose Postgres SQL for this reason. Its widely used, meaning my value in the market grows as a developer,
+  and its also regarded as a solid CP database to use in your projects. I also love the ease of use, a simple command-line prompt,
+  and I have access to my test database.
+
+- With this in mind, I began planning out the database structure and created the diagram for it. I decided to create a separate table
+  for logs regarding billing. My reasoning behind it is due to the different information I would like to be saved and 
+  presented if a billing transaction were to fail. The functioanlity I'm thinking for that service is as follows: When the client runs out
+  of session credits, the service will send a request to the Intuit services through the billing service. If the request fails for some reason,
+  I'd like to show for which specific customer it failed, for what amount, what date and the error code/message that Intuit may provide. For this
+  functionality it would be easier, and cleaner to separate the tables into two log databases.
+
+- The Coach table will hold certain flags like the role (Super User or User), and coach_id which will be important throughout the site. I'm leaning
+  in on utilizing the User model that Django comes with for Authentication. My reason shows that its production-ready, robust, and usually considered
+  far better than implementing my own.
+
+- Session will be refrenced by the Coach table and the Client table since it will hold scheduled session. One edge case I thought about was how to handle
+  completed session, particularly for retrieving sessions. I might seperate the date field in the database to DAY, MONTH, and YEAR for less complicated queries
+  code wise, and would help filter sessions by current year and month rather than by the entire date. In all honesty I might leave this portion to when I start
+  implementing the scheduling portion of the application, or even build a small project composed of the scheduling feature to test differnet solutions and 
+  database layout.
+
+- If you've read through this whole essay, then I thank you and I hope you have a great morning, afternoon, evening, and night.
