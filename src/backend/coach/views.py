@@ -7,20 +7,20 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 class CoachCreateView(generics.CreateAPIView):
     queryset = Coach.objects.all()
     serializer_class = CoachCreateSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
 class CoachListView(generics.ListAPIView):
     queryset = Coach.objects.all()
     serializer_class=CoachReadSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
 class CoachDetailView(generics.RetrieveAPIView):
     queryset = Coach.objects.all()
     serializer_class = CoachReadSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
 class CoachUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Coach.objects.all()
     serializer_class = CoachUpdateSerializer
     lookup_field = "id"
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]

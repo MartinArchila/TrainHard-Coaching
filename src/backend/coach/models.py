@@ -15,4 +15,4 @@ class Coach (models.Model):
     phone_num = models.CharField(max_length=11, blank=False, editable=True)
 
     def __str__(self):
-        return self
+        return self.user.get_full_name()

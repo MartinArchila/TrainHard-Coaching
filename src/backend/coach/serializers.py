@@ -75,9 +75,34 @@ class CoachReadSerializer(serializers.ModelSerializer):
         return f"{obj.user.first_name} {obj.user.last_name}"
     
 class CoachUpdateSerializer(serializers.ModelSerializer):
+    first_name = serializers.CharField(source="user.first_name")
+    last_name = serializers.CharField(source="user.last_name")
+    email = serializers.EmailField(source="user.email")
     class Meta:
         model = Coach
         fields = [
+        "first_name",
+        "last_name",
+        "email",
         "phone_num",
-        "address"
+        "address",
         ]
+
+    def update(self, instance, validated_data):
+        user_data = validated_data.pop("user",{})
+
+        instance.phone_num = validated_data.get(
+            "phone_num", instance.phone_num
+        )
+        instance.address = validated_data.get(
+            "address", instance.address
+        )
+        instance.save()
+
+        user = instance.user
+        user.first_name = user_data.get("first_name",user.first_name)
+        user.last_name = user_data.get("last_name",user.last_name)
+        user.email = user_data.get("email",user.email)
+
+        return instance
+    
