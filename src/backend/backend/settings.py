@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'coach',
     'client',
+    'session',
 ]
 
 MIDDLEWARE = [
