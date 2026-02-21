@@ -6,4 +6,5 @@ urlpatterns = [
     path("login/", TokenObtainPairView.as_view(), name="get_token"),
     path("auth/refresh/", TokenRefreshView.as_view(),name="refresh_token"),
     path("coach/", include("coach.urls")),
+    path("client/", include("client.urls")),
 ]

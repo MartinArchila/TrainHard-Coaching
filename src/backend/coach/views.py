@@ -23,4 +23,4 @@ class CoachUpdateDeleteView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Coach.objects.all()
     serializer_class = CoachUpdateSerializer
     lookup_field = "id"
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
