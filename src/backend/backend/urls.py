@@ -7,4 +7,5 @@ urlpatterns = [
     path("auth/refresh/", TokenRefreshView.as_view(),name="refresh_token"),
     path("coach/", include("coach.urls")),
     path("client/", include("client.urls")),
+    path("session/", include("session.urls")),
 ]
