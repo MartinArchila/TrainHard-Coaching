@@ -20,9 +20,9 @@ class Migration(migrations.Migration):
             name='Client',
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
-                ('first_name', models.CharField(verbose_name=255)),
-                ('last_name', models.CharField(verbose_name=255)),
-                ('phone_num', models.CharField(blank=True, null=True, verbose_name=11)),
+                ('first_name', models.CharField(verbose_name='First Name', max_length=255)),
+                ('last_name', models.CharField(verbose_name='Last Name', max_length=255)),
+                ('phone_num', models.CharField(blank=True, null=True, verbose_name='Phone Number', max_length=11)),
                 ('email', models.EmailField(blank=True, max_length=254, null=True, unique=True)),
                 ('session_credits', models.IntegerField(default=0, validators=[django.core.validators.MinValueValidator(0)])),
                 ('last_session_date', models.DateField(default=datetime.date.today)),

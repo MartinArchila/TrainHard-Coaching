@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('event_type', models.CharField(choices=[('USER_CREATED', 'A coach was created successfully'), ('LOGIN', 'the user logged in successfully'), ('LOGOUT', 'Logged out successfully'), ('TOKEN_REFRESH', 'Token Refeshed'), ('SESSION_SCHEDULED', 'Session scheduled successfully'), ('SESSION_COMPLETED', 'Session completed successfully'), ('SESSION_EDIT', 'Session modified successfully'), ('SESSION_DELETE', 'Session eliminated successfully'), ('CLIENT_CREATE', 'Client createed successfully'), ('CLIENT_EDIT', 'Client modified successfully'), ('CLIENT_DELETE', 'Client eliminated successfully')], max_length=100)),
                 ('model_name', models.CharField(blank=True, max_length=100, null=True)),
                 ('object_id', models.CharField(blank=True, max_length=110, null=True)),
-                ('description', models.CharField(blank=True, null=True)),
+                ('description', models.CharField(blank=True, max_length=200, null=True)),
                 ('ip_address', models.GenericIPAddressField(blank=True, null=True)),
                 ('user_agent', models.TextField(blank=True, null=True)),
                 ('timestamp', models.DateTimeField(auto_now_add=True)),

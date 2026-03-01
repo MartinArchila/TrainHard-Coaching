@@ -30,7 +30,7 @@ class AuditLog(models.Model):
     event_type = models.CharField(max_length=100, choices = EVENT_TYPES)
     model_name = models.CharField(max_length=100, null=True, blank=True)
     object_id = models.CharField(max_length=110, null=True, blank=True)
-    description = models.CharField(null=True, blank=True)
+    description = models.CharField(max_length=200, null=True, blank=True)
     ip_address = models.GenericIPAddressField(null=True, blank=True)
     user_agent = models.TextField(null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
