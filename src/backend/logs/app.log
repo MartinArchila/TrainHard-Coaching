@@ -362,3 +362,68 @@ INFO 2026-02-28 08:11:37,434 log "GET /coach/details/5acb5f48-6624-406c-898a-1c3
 INFO 2026-02-28 08:12:26,195 log "GET /coach/edit/5acb5f48-6624-406c-898a-1c386bf7eacc/ HTTP/1.1" 200 133
 INFO 2026-02-28 08:12:44,865 log "PUT /coach/edit/5acb5f48-6624-406c-898a-1c386bf7eacc/ HTTP/1.1" 200 133
 INFO 2026-02-28 08:13:23,152 log "DELETE /coach/edit/8a543726-ca54-4c84-b5c8-a9aa42690221/ HTTP/1.1" 204 0
+INFO 2026-03-01 11:28:37,780 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-01 11:28:43,789 log Not Found: /
+WARNING 2026-03-01 11:28:43,789 basehttp "GET / HTTP/1.1" 404 2804
+WARNING 2026-03-01 11:28:43,896 log Not Found: /favicon.ico
+WARNING 2026-03-01 11:28:43,896 basehttp "GET /favicon.ico HTTP/1.1" 404 2855
+WARNING 2026-03-01 11:32:02,298 log Unauthorized: /login/
+WARNING 2026-03-01 11:32:02,298 basehttp "POST /login/ HTTP/1.1" 401 63
+WARNING 2026-03-01 11:32:08,717 log Unauthorized: /login/
+WARNING 2026-03-01 11:32:08,717 basehttp "POST /login/ HTTP/1.1" 401 63
+WARNING 2026-03-01 11:32:40,522 log Not Found: /
+WARNING 2026-03-01 11:32:40,524 basehttp "GET / HTTP/1.1" 404 2804
+INFO 2026-03-01 11:32:45,052 basehttp "GET /login HTTP/1.1" 301 0
+WARNING 2026-03-01 11:32:45,334 log Method Not Allowed: /login/
+WARNING 2026-03-01 11:32:45,341 basehttp "GET /login/ HTTP/1.1" 405 12407
+INFO 2026-03-01 11:32:45,686 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-03-01 11:32:45,686 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-03-01 11:32:45,693 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-03-01 11:32:45,694 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-03-01 11:32:45,723 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-03-01 11:32:45,732 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-03-01 11:32:45,735 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-03-01 11:32:45,737 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-03-01 11:32:45,745 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-03-01 11:32:45,754 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-03-01 11:32:45,765 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-03-01 11:32:45,779 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-03-01 11:33:21,127 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:33:22,101 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-01 11:33:25,846 log Not Found: /list/
+WARNING 2026-03-01 11:33:25,851 basehttp "GET /list/ HTTP/1.1" 404 2837
+INFO 2026-03-01 11:33:28,056 basehttp "GET /coach/ HTTP/1.1" 200 10024
+INFO 2026-03-01 11:34:02,505 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:34:03,531 autoreload Watching for file changes with StatReloader
+INFO 2026-03-01 11:34:09,838 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:34:10,780 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-01 11:34:13,608 log Not Found: /coach/creat
+WARNING 2026-03-01 11:34:13,608 basehttp "GET /coach/creat HTTP/1.1" 404 3804
+INFO 2026-03-01 11:34:15,402 basehttp "GET /coach/create HTTP/1.1" 301 0
+WARNING 2026-03-01 11:34:15,440 log Unauthorized: /coach/create/
+WARNING 2026-03-01 11:34:15,440 basehttp "GET /coach/create/ HTTP/1.1" 401 8781
+WARNING 2026-03-01 11:34:21,068 log Unauthorized: /coach/create/
+WARNING 2026-03-01 11:34:21,068 basehttp "GET /coach/create/ HTTP/1.1" 401 8781
+INFO 2026-03-01 11:34:34,037 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:34:35,015 autoreload Watching for file changes with StatReloader
+INFO 2026-03-01 11:34:41,390 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:34:42,338 autoreload Watching for file changes with StatReloader
+WARNING 2026-03-01 11:34:43,287 log Method Not Allowed: /coach/create/
+WARNING 2026-03-01 11:34:43,287 basehttp "GET /coach/create/ HTTP/1.1" 405 14192
+INFO 2026-03-01 11:35:44,821 basehttp "POST /coach/create/ HTTP/1.1" 201 14491
+INFO 2026-03-01 11:36:03,093 autoreload C:\Users\swift\OneDrive\Documents\GitHub\TrainHard-Coaching\src\backend\coach\views.py changed, reloading.
+INFO 2026-03-01 11:36:04,131 autoreload Watching for file changes with StatReloader
+INFO 2026-03-01 11:36:08,888 basehttp "POST /login/ HTTP/1.1" 200 489
+WARNING 2026-03-01 11:36:28,313 log Unauthorized: /client/create/
+WARNING 2026-03-01 11:36:28,314 basehttp "POST /client/create/ HTTP/1.1" 401 172
+WARNING 2026-03-01 11:36:51,970 log Bad Request: /client/create/
+WARNING 2026-03-01 11:36:51,970 basehttp "POST /client/create/ HTTP/1.1" 400 90
+WARNING 2026-03-01 11:37:06,148 log Not Found: /coach/list/
+WARNING 2026-03-01 11:37:06,148 basehttp "GET /coach/list/ HTTP/1.1" 404 3804
+INFO 2026-03-01 11:37:18,517 basehttp "GET /coach/ HTTP/1.1" 200 194
+INFO 2026-03-01 11:37:45,643 basehttp "POST /client/create/ HTTP/1.1" 201 210
+INFO 2026-03-01 11:38:06,417 basehttp "GET /client/ HTTP/1.1" 200 256
+INFO 2026-03-01 11:38:29,337 basehttp "GET /client/edit/b1163ffb-71cc-400a-a74a-c16819acabac/ HTTP/1.1" 200 175
+WARNING 2026-03-01 11:38:57,080 log Bad Request: /client/edit/b1163ffb-71cc-400a-a74a-c16819acabac/
+WARNING 2026-03-01 11:38:57,080 basehttp "PUT /client/edit/b1163ffb-71cc-400a-a74a-c16819acabac/ HTTP/1.1" 400 42
+INFO 2026-03-01 11:39:03,418 basehttp "PUT /client/edit/b1163ffb-71cc-400a-a74a-c16819acabac/ HTTP/1.1" 200 185
