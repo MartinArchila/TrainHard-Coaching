@@ -20,6 +20,50 @@ load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose":{
+            "format":"{levelname} {asctime} {module} {message}",
+            "style":"{",
+        },
+        "simple":{
+            "format": "{levelname} {message}",
+            "style":"{"
+        },
+    },
+    "handlers":{
+        "file": {
+            "level":"INFO",
+            "class":"logging.handlers.RotatingFileHandler",
+            "filename":os.path.join(BASE_DIR, "logs/app.log"),
+            "maxBytes": 5 * 1024 * 1024, # 5 MB
+            "backupCount": 3,
+            "formatter": "verbose",
+        },
+        "error_file": {
+            "level": "ERROR",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(BASE_DIR, "logs/error.log"),
+            "maxBytes": 5 * 1024 * 1024, # 5 MB
+            "backupCount": 3,
+            "formatter":"verbose",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file", "error_file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+        "app_logger":{
+            "handlers": ["file", "error_file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    },
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -61,6 +105,7 @@ INSTALLED_APPS = [
     'coach',
     'client',
     'session',
+    'AuditLog',
 ]
 
 MIDDLEWARE = [
